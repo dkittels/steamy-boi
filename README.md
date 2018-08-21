@@ -13,6 +13,8 @@ This isn't the most rigorous of projects, but I'm certainly open to contribution
 ## Installation
 First make a copy of `config.json.example` and replace `steam_api_key` with your own api key (acquired [here](https://steamcommunity.com/dev/apikey) if you don't have one already) and the `steam_id` with your own steam id number.
 
+Install the npm packages.
+
 To deploy you'll need your own Alexa Lambda Function and an Alexa Skill through the Alexa Developer Console using said function as an endpoint. You can then deploy code by uploading a zip of the lambda folder or, preferably, use the publish script in the root folder.  In order to use the script you'll have to have the aws CLI installed and authenticated replace the `steamyBoi` function with your own function's name.  Then just run the shell script from the command line.
 
 Unfortunately there seems to be no way to export the Alexa Voice Interface from the Alexa Developer Console, but it shouldn't be too hard to recreate given the limited number of intents currently developed.  For the time being just make sure you have the following intents:
